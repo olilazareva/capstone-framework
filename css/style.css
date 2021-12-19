@@ -1,0 +1,233 @@
+*default*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+img {
+	vertical-align: none;
+}
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}*/
+
+/* basic info========================================== */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 18px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	background-color: #fff;
+
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+footer {
+	background-color: rgba(163, 240, 231, 0.78);
+	text-align: center;
+	margin-bottom: 0;
+	}
+
+
+
+/*======================================================*/
+.navbar {
+	padding: 1%;
+}
+
+.navbar-brand {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.space {
+    padding-top: 204px;
+}
+
+#myPic img {
+        margin-top: 80px;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 26px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+	font-weight: 300;
+}
+
+.learn-more{
+	font-size: 16px;
+}
+
+.carousel-caption{
+	background-color: rgba(255, 255, 255, 0.59);
+	border-radius: 10px;
+	font-weight: 700;
+	color: #000;
+}
+
+
+#carouselExampleIndicators{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height:71.5vh;
+  	position: relative;
+
+}
+
+.carousel-inner {
+	position: absolute;
+  	top: 50%;
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+
+}
+
+
+.container-fluid,
+.row,
+.col-12 {
+	margin: auto;
+	
+}
+
+ .image-wrap {
+    margin: 40px 0;
+    position: relative;
+    text-align: center;
+}
+
+.image-wrap img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*====================To the top button=================*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(back-to-top.png) no-repeat center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  -ms-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  -ms-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: .8;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top:hover {
+  /*background-color: #e86256;*/
+  opacity: 1;
+}
+
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; } 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; l
+	eft: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
